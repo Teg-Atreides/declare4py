@@ -84,7 +84,7 @@ class Declare4Py:
         for trace in self.log:
             tmp_trace = []
             for event in trace:
-                tmp_trace.append(event["concept:name"])
+                tmp_trace.append(event.iloc["concept:name"])
             projection.append(tmp_trace)
         return projection
 
